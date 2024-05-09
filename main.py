@@ -1,8 +1,9 @@
+from process_detect import processDetect
 from flask import Flask, request 
 import os
 import uuid
 from werkzeug.utils import secure_filename
-from process_detect import processDetect
+
 
 app=Flask(__name__)
 
