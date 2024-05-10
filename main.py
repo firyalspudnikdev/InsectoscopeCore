@@ -28,6 +28,7 @@ def Detected_pecies():
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], unique_filename))
         file_info = {'filename': unique_filename, 'filetype': file.content_type}
         result = processDetect(unique_filename)
+        print(result)
         return result  # Pastikan hasilnya merupakan JSON
     
     
